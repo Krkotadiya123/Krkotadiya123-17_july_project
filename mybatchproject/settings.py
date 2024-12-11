@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-@ux5+mo3t_%l!cfuv3at=w)!zm%0lv0#pb*+uwc-3gs1apume8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 #twitter api
 
