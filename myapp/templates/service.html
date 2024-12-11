@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProCar - Services</title>
+    <link rel="icon" type="image/x-icon" href="/static/images/car.jpg" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* General Styles */
+      body {
+        background-color: rgba(4, 4, 8, 0.179);
+      }
+
+      /* Service Section */
+      .service-item {
+        background-color: #343a40;
+        border-radius: 10px;
+        color: white;
+        padding: 30px;
+        transition: transform 0.3s;
+      }
+
+      .service-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .service-item .fa {
+        font-size: 3rem;
+        margin-right: 15px;
+      }
+
+      .bg-banner {
+        background-color: #007bff;
+        color: white;
+        border-radius: 10px;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #343a40;
+        color: white;
+        padding: 20px 0;
+      }
+
+      /* Navbar */
+      .navbar-brand {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      .navbar-dark .nav-link {
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      .navbar-dark .nav-link:hover {
+        color: white;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <img
+          src="/static/images/car.jpg"
+          alt="Logo"
+          width="50"
+          height="40"
+          class="d-inline-block align-text-top mx-2"
+        />
+        <p>pro_car</p>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/service">Services</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Services Section Start -->
+    <div class="container-fluid py-5">
+      <div class="container pt-5 pb-3">
+        <h1 class="display-4 text-uppercase text-center mb-5">Our Services</h1>
+        <div class="row">
+          <!-- Service 1 -->
+          <div class="col-lg-4 col-md-6 mb-2">
+            <div
+              class="service-item d-flex flex-column justify-content-center px-4 mb-4"
+            >
+              <div
+                class="d-flex align-items-center justify-content-between mb-3"
+              >
+                <div
+                  class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                  style="width: 80px; height: 80px"
+                >
+                  <i class="fa fa-2x fa-taxi text-secondary"></i>
+                </div>
+                <h1 class="display-2 text-white mt-n2 m-0">01</h1>
+              </div>
+              <h4 class="text-uppercase mb-3">Car Rental</h4>
+              <p class="m-0">
+                Rent a car easily with our flexible rental plans to suit your
+                needs.
+              </p>
+            </div>
+          </div>
+          <!-- Service 2 -->
+          <div class="col-lg-4 col-md-6 mb-2">
+            <div
+              class="service-item d-flex flex-column justify-content-center px-4 mb-4"
+            >
+              <div
+                class="d-flex align-items-center justify-content-between mb-3"
+              >
+                <div
+                  class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                  style="width: 80px; height: 80px"
+                >
+                  <i class="fa fa-2x fa-money-check-alt text-secondary"></i>
+                </div>
+                <h1 class="display-2 text-white mt-n2 m-0">02</h1>
+              </div>
+              <h4 class="text-uppercase mb-3">Car Financing</h4>
+              <p class="m-0">
+                Easy financing options to make your dream car a reality.
+              </p>
+            </div>
+          </div>
+          <!-- Service 3 -->
+          <div class="col-lg-4 col-md-6 mb-2">
+            <div
+              class="service-item d-flex flex-column justify-content-center px-4 mb-4"
+            >
+              <div
+                class="d-flex align-items-center justify-content-between mb-3"
+              >
+                <div
+                  class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                  style="width: 80px; height: 80px"
+                >
+                  <i class="fa fa-2x fa-car text-secondary"></i>
+                </div>
+                <h1 class="display-2 text-white mt-n2 m-0">03</h1>
+              </div>
+              <h4 class="text-uppercase mb-3">Car Inspection</h4>
+              <p class="m-0">
+                Get a detailed inspection report for your car before buying or
+                selling.
+              </p>
+            </div>
+          </div>
+          <!-- Service 4 -->
+          <div class="col-lg-4 col-md-6 mb-2">
+            <div
+              class="service-item d-flex flex-column justify-content-center px-4 mb-4"
+            >
+              <div
+                class="d-flex align-items-center justify-content-between mb-3"
+              >
+                <div
+                  class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                  style="width: 80px; height: 80px"
+                >
+                  <i class="fa fa-2x fa-cogs text-secondary"></i>
+                </div>
+                <h1 class="display-2 text-white mt-n2 m-0">04</h1>
+              </div>
+              <h4 class="text-uppercase mb-3">Auto Repairing</h4>
+              <p class="m-0">
+                Trust us to provide top-quality auto repair services for all
+                types of vehicles.
+              </p>
+            </div>
+          </div>
+          <!-- Service 5 -->
+          <div class="col-lg-4 col-md-6 mb-2">
+            <div
+              class="service-item d-flex flex-column justify-content-center px-4 mb-4"
+            >
+              <div
+                class="d-flex align-items-center justify-content-between mb-3"
+              >
+                <div
+                  class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                  style="width: 80px; height: 80px"
+                >
+                  <i class="fa fa-2x fa-spray-can text-secondary"></i>
+                </div>
+                <h1 class="display-2 text-white mt-n2 m-0">05</h1>
+              </div>
+              <h4 class="text-uppercase mb-3">Auto Painting</h4>
+              <p class="m-0">
+                Give your car a fresh coat of paint with our professional
+                painting services.
+              </p>
+            </div>
+          </div>
+          <!-- Service 6 -->
+          <div class="col-lg-4 col-md-6 mb-2">
+            <div
+              class="service-item d-flex flex-column justify-content-center px-4 mb-4"
+            >
+              <div
+                class="d-flex align-items-center justify-content-between mb-3"
+              >
+                <div
+                  class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                  style="width: 80px; height: 80px"
+                >
+                  <i class="fa fa-2x fa-pump-soap text-secondary"></i>
+                </div>
+                <h1 class="display-2 text-white mt-n2 m-0">06</h1>
+              </div>
+              <h4 class="text-uppercase mb-3">Auto Cleaning</h4>
+              <p class="m-0">
+                We offer professional cleaning services to keep your car
+                spotless inside and out.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Services Section End -->
+
+    <!-- Banner Start -->
+    <div class="container-fluid py-5">
+      <div class="container py-5">
+        <div class="bg-banner py-5 px-4 text-center">
+          <h1 class="display-1 text-uppercase text-primary mb-4">50% OFF</h1>
+          <h1 class="text-uppercase text-light mb-4">
+            Special Offer For New Members
+          </h1>
+          <p class="mb-4">Only for Sunday from 1st Jan to 30th Jan 2045</p>
+          <a class="btn btn-primary mt-2 py-3 px-5" href="#">Register Now</a>
+        </div>
+      </div>
+    </div>
+    <!-- Banner End -->
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start">
+      <div class="container p-4">
+        <div class="row">
+          <!-- Quick Links -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Quick Links</h5>
+            <ul class="list-unstyled footer-links">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About</a></li>
+              {% if data %}
+              <li><a href="/contect">Contact</a></li>
+              <li><a href="/profile">Profile</a></li>
+              {%endif%}
+            </ul>
+          </div>
+
+          <!-- Contact Us -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Contact Us</h5>
+            <p>Email: support@procar.com</p>
+            <p>Phone: +91 9106903090</p>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Newsletter</h5>
+            <form>
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                />
+                <button class="btn btn-warning" type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Social Media -->
+          <!-- Social Media -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Follow Us</h5>
+            <div class="d-flex justify-content-start">
+              <a
+                href="#"
+                class="btn btn-primary btn-lg rounded-circle me-2"
+                style="
+                  width: 50px;
+                  height: 50px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="btn btn-info btn-lg rounded-circle me-2"
+                style="
+                  width: 50px;
+                  height: 50px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="btn btn-danger btn-lg rounded-circle me-2"
+                style="
+                  width: 50px;
+                  height: 50px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="btn btn-dark btn-lg rounded-circle"
+                style="
+                  width: 50px;
+                  height: 50px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center p-3 bg-dark">
+        &copy; 2024 ProCar. All Rights Reserved.
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
